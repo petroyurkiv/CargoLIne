@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		ABBEDC682A0D743200CF5C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC672A0D743200CF5C29 /* AppDelegate.swift */; };
 		ABBEDC6A2A0D743200CF5C29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC692A0D743200CF5C29 /* SceneDelegate.swift */; };
-		ABBEDC6C2A0D743200CF5C29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC6B2A0D743200CF5C29 /* ViewController.swift */; };
+		ABBEDC6C2A0D743200CF5C29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC6B2A0D743200CF5C29 /* HomeViewController.swift */; };
 		ABBEDC6F2A0D743200CF5C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBEDC6D2A0D743200CF5C29 /* Main.storyboard */; };
 		ABBEDC712A0D743600CF5C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABBEDC702A0D743600CF5C29 /* Assets.xcassets */; };
 		ABBEDC742A0D743600CF5C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABBEDC722A0D743600CF5C29 /* LaunchScreen.storyboard */; };
+		ABBEDC802A0D88D400CF5C29 /* Fuel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC7F2A0D88D400CF5C29 /* Fuel.swift */; };
+		ABBEDC822A0D895F00CF5C29 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC812A0D895F00CF5C29 /* Brand.swift */; };
+		ABBEDC842A0D8A6700CF5C29 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC832A0D8A6700CF5C29 /* Country.swift */; };
+		ABBEDC862A0D8B6400CF5C29 /* CarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC852A0D8B6400CF5C29 /* CarType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABBEDC642A0D743200CF5C29 /* CargoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CargoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBEDC672A0D743200CF5C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABBEDC692A0D743200CF5C29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABBEDC6B2A0D743200CF5C29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABBEDC6B2A0D743200CF5C29 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ABBEDC6E2A0D743200CF5C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABBEDC702A0D743600CF5C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABBEDC732A0D743600CF5C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABBEDC752A0D743600CF5C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABBEDC7F2A0D88D400CF5C29 /* Fuel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fuel.swift; sourceTree = "<group>"; };
+		ABBEDC812A0D895F00CF5C29 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		ABBEDC832A0D8A6700CF5C29 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		ABBEDC852A0D8B6400CF5C29 /* CarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,11 @@
 			children = (
 				ABBEDC672A0D743200CF5C29 /* AppDelegate.swift */,
 				ABBEDC692A0D743200CF5C29 /* SceneDelegate.swift */,
-				ABBEDC6B2A0D743200CF5C29 /* ViewController.swift */,
+				ABBEDC6B2A0D743200CF5C29 /* HomeViewController.swift */,
+				ABBEDC852A0D8B6400CF5C29 /* CarType.swift */,
+				ABBEDC7F2A0D88D400CF5C29 /* Fuel.swift */,
+				ABBEDC812A0D895F00CF5C29 /* Brand.swift */,
+				ABBEDC832A0D8A6700CF5C29 /* Country.swift */,
 				ABBEDC6D2A0D743200CF5C29 /* Main.storyboard */,
 				ABBEDC702A0D743600CF5C29 /* Assets.xcassets */,
 				ABBEDC722A0D743600CF5C29 /* LaunchScreen.storyboard */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABBEDC6C2A0D743200CF5C29 /* ViewController.swift in Sources */,
+				ABBEDC862A0D8B6400CF5C29 /* CarType.swift in Sources */,
+				ABBEDC6C2A0D743200CF5C29 /* HomeViewController.swift in Sources */,
+				ABBEDC802A0D88D400CF5C29 /* Fuel.swift in Sources */,
 				ABBEDC682A0D743200CF5C29 /* AppDelegate.swift in Sources */,
+				ABBEDC842A0D8A6700CF5C29 /* Country.swift in Sources */,
+				ABBEDC822A0D895F00CF5C29 /* Brand.swift in Sources */,
 				ABBEDC6A2A0D743200CF5C29 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

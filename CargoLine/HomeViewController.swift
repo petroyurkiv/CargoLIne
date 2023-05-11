@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import Foundation
+
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var typeField: UITextField!
