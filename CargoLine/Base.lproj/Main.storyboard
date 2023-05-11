@@ -26,6 +26,9 @@
                                             <segment title="First"/>
                                             <segment title="Second"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="countryDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="ICb-AB-2ak"/>
+                                        </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="SD9-YO-QVI">
                                         <rect key="frame" x="0.0" y="55" width="358" height="68"/>
@@ -149,11 +152,17 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                                <connections>
+                                                    <action selector="calculateDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSp-z8-wrK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knI-Dk-GYI">
                                                 <rect key="frame" x="179" y="0.0" width="179" height="50"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Clean"/>
+                                                <connections>
+                                                    <action selector="cleanDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yOR-wp-E9G"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -187,6 +196,13 @@
                             <constraint firstItem="3xb-uh-nWw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j42-J2-hd0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="brandField" destination="K7K-yy-tor" id="Aie-u4-UQL"/>
+                        <outlet property="fuelField" destination="UKn-ei-wFy" id="c5X-5o-18V"/>
+                        <outlet property="segmentedControl" destination="1QI-Mr-Att" id="4QS-sH-MbH"/>
+                        <outlet property="typeField" destination="tcR-6Y-tHR" id="ga5-sw-DkR"/>
+                        <outlet property="yearField" destination="Equ-WC-TgX" id="0Fm-ON-X0X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
