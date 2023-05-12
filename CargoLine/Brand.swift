@@ -12,9 +12,24 @@ enum Brand: CaseIterable {
     case bmw
     case mazda
     case mersedesBenz
-    case volkswagen 
+    case volkswagen
     
-    var value: Int {
+    var name: String {
+        switch self {
+        case .audi:
+            return "Audi"
+        case .bmw:
+            return "BMW"
+        case .mazda:
+            return "Mazda"
+        case .mersedesBenz:
+            return "MersedesBenz"
+        case .volkswagen:
+            return "Volkswagen"
+        }
+    }
+    
+    var value: Double {
         switch self {
         case .audi:
             return 1000

@@ -13,7 +13,20 @@ enum CarType: CaseIterable {
     case wagon
     case minivan
     
-    var value: Int {
+    var name: String {
+        switch self {
+        case .sedan:
+            return "Sedan"
+        case .coupe:
+            return "Coupe"
+        case .wagon:
+            return "Wagon"
+        case .minivan:
+            return "Minivan"
+        }
+    }
+    
+    var value: Double {
         switch self {
         case .sedan:
             return 50

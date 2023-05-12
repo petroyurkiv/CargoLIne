@@ -13,7 +13,20 @@ enum Fuel: CaseIterable {
     case gas
     case electro
     
-    var value: Int {
+    var name: String {
+        switch self {
+        case .petrol:
+            return "Petrol"
+        case .diesel:
+            return "Diesel"
+        case .gas:
+            return "Gas"
+        case .electro:
+            return "Electro"
+        }
+    }
+    
+    var value: Double {
         switch self {
         case .petrol:
             return 200
