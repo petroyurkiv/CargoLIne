@@ -29,13 +29,13 @@ enum Fuel: CaseIterable {
     var value: Double {
         switch self {
         case .petrol:
-            return 200
+            return 200.0
         case .diesel:
-            return 300
+            return 300.0
         case .gas:
-            return 150
+            return 150.0
         case .electro:
-            return 500
+            return 500.0
         }
     }
 }

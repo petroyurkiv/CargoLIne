@@ -7,20 +7,17 @@
 
 import UIKit
 
-import Foundation
-
 final class HomeViewController: UIViewController {
+    @IBOutlet private weak var segmentedControl: UISegmentedControl!
+    @IBOutlet private weak var typeField: UITextField!
+    @IBOutlet private weak var yearField: UITextField!
+    @IBOutlet private weak var fuelField: UITextField!
+    @IBOutlet private weak var brandField: UITextField!
     
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    @IBOutlet weak var typeField: UITextField!
-    @IBOutlet weak var yearField: UITextField!
-    @IBOutlet weak var fuelField: UITextField!
-    @IBOutlet weak var brandField: UITextField!
-    
-    let carTypes = CarType.allCases
-    let years = Array(2015...2023)
-    let fuel = Fuel.allCases
-    let brands = Brand.allCases
+    private let carTypes = CarType.allCases
+    private let years = Array(2015...2023)
+    private let fuel = Fuel.allCases
+    private let brands = Brand.allCases
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +28,8 @@ final class HomeViewController: UIViewController {
     
     private func confSegmnetedControl() {
         segmentedControl.removeAllSegments()
-        segmentedControl.insertSegment(withTitle: "Ukraine", at: 0, animated: false)
-        segmentedControl.insertSegment(withTitle: "USA", at: 1, animated: false)
+        segmentedControl.insertSegment(withTitle: Country.ukraine.name, at: 0, animated: false)
+        segmentedControl.insertSegment(withTitle: Country.usa.name, at: 1, animated: false)
         segmentedControl.selectedSegmentIndex = 0
     }
     
@@ -57,19 +54,18 @@ final class HomeViewController: UIViewController {
         brandField.text = brands[0].name
     }
     
-    @IBAction func countryDidChange(_ sender: UISegmentedControl) {
+    @IBAction private func countryDidChange(_ sender: UISegmentedControl) {
         clear()
     }
     
-    @IBAction func calculateDidTap(_ sender: Any) {
+    @IBAction private func calculateDidTap(_ sender: Any) {
         func getValueForm(textField: UITextField) -> Int {
             guard let pickerView = textField.inputView as? UIPickerView else { return 0 }
-            let itemIndex = pickerView.selectedRow(inComponent: 0)
-            return itemIndex
+            return pickerView.selectedRow(inComponent: 0)
         }
         
         let carType = carTypes[getValueForm(textField: typeField)].value
-        var year: Double
+        let year: Double
         if years[getValueForm(textField: yearField)] <= 2018 {
             year = 500
         } else {
@@ -80,15 +76,8 @@ final class HomeViewController: UIViewController {
         
         guard let selectedCountry = Country(rawValue: segmentedControl.selectedSegmentIndex) else { return }
         
-        switch selectedCountry {
-        case .ukraine:
-            let result = carType + year + fuel + brand * 1.0
-            showAlertWith(title: String(result))
-        case .usa:
-            let result = carType + year + fuel + brand * 1.2
-            showAlertWith(title: String(result))
-        }
-    
+        let result = carType + year + fuel + brand * selectedCountry.value
+        showAlertWith(title: String(result))
     }
     
     private func showAlertWith(title: String) {
@@ -97,14 +86,13 @@ final class HomeViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
-    @IBAction func cleanDidTap(_ sender: Any) {
+    @IBAction private func cleanDidTap(_ sender: Any) {
         clear()
     }
     
 }
 
 extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }

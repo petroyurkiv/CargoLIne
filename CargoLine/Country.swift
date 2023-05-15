@@ -11,6 +11,15 @@ enum Country: Int {
     case ukraine
     case usa
     
+    var name: String {
+        switch self {
+        case .ukraine:
+            return "Ukraine"
+        case .usa:
+            return "USA"
+        }
+    }
+    
     var value: Double {
         switch self {
         case .ukraine:

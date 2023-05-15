@@ -29,13 +29,13 @@ enum CarType: CaseIterable {
     var value: Double {
         switch self {
         case .sedan:
-            return 50
+            return 50.0
         case .coupe:
-            return 200
+            return 200.0
         case .wagon:
-            return 300
+            return 300.0
         case .minivan:
-            return 80
+            return 80.0
         }
     }
 }

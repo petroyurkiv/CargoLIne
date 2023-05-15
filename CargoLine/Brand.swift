@@ -32,15 +32,15 @@ enum Brand: CaseIterable {
     var value: Double {
         switch self {
         case .audi:
-            return 1000
+            return 1000.0
         case .bmw:
-            return 1100
+            return 1100.0
         case .mazda:
-            return 400
+            return 400.0
         case .mersedesBenz:
-            return 800
+            return 800.0
         case .volkswagen:
-            return 600
+            return 600.0
         }
     }
 }
