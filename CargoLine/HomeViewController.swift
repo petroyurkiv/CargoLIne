@@ -9,10 +9,19 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     @IBOutlet private weak var segmentedControl: UISegmentedControl!
+    
+    @IBOutlet private weak var typeLabel: UILabel!
+    @IBOutlet private weak var yearLabel: UILabel!
+    @IBOutlet private weak var fuelLabel: UILabel!
+    @IBOutlet private weak var brandLabel: UILabel!
+    
     @IBOutlet private weak var typeField: UITextField!
     @IBOutlet private weak var yearField: UITextField!
     @IBOutlet private weak var fuelField: UITextField!
     @IBOutlet private weak var brandField: UITextField!
+    
+    @IBOutlet private weak var calculateButton: UIButton!
+    @IBOutlet private weak var cleanButton: UIButton!
     
     private let carTypes = CarType.allCases
     private let years = Array(2015...2023)
@@ -21,37 +30,11 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        confSegmnetedControl()
-        confTextFields()
+        configureSegmnetedControl()
+        configureTextLabels()
+        configureTextFields()
+        configureButtons()
         clear()
-    }
-    
-    private func confSegmnetedControl() {
-        segmentedControl.removeAllSegments()
-        segmentedControl.insertSegment(withTitle: Country.ukraine.name, at: 0, animated: false)
-        segmentedControl.insertSegment(withTitle: Country.usa.name, at: 1, animated: false)
-        segmentedControl.selectedSegmentIndex = 0
-    }
-    
-    private func addPickerTo(textField: UITextField) {
-        let pickerView = UIPickerView()
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        textField.inputView = pickerView
-    }
-    
-    private func confTextFields() {
-        addPickerTo(textField: typeField)
-        addPickerTo(textField: yearField)
-        addPickerTo(textField: fuelField)
-        addPickerTo(textField: brandField)
-    }
-    
-    private func clear() {
-        typeField.text = carTypes[0].name
-        yearField.text = String(years[0])
-        fuelField.text = fuel[0].name
-        brandField.text = brands[0].name
     }
     
     @IBAction private func countryDidChange(_ sender: UISegmentedControl) {
@@ -80,19 +63,59 @@ final class HomeViewController: UIViewController {
         showAlertWith(title: String(result))
     }
     
-    private func showAlertWith(title: String) {
-        let alert = UIAlertController(title: "Your result:", message: title, preferredStyle: .alert)
-        alert.addAction(.init(title: "Ok", style: .cancel))
-        self.present(alert, animated: true)
-    }
-    
     @IBAction private func cleanDidTap(_ sender: Any) {
         clear()
     }
     
+    private func configureSegmnetedControl() {
+        segmentedControl.removeAllSegments()
+        segmentedControl.insertSegment(withTitle: Country.ukraine.name, at: 0, animated: false)
+        segmentedControl.insertSegment(withTitle: Country.usa.name, at: 1, animated: false)
+        segmentedControl.selectedSegmentIndex = 0
+    }
+    
+    private func configureTextLabels() {
+        typeLabel.text = R.string.texts.cargoLineTypeLabel()
+        yearLabel.text = R.string.texts.cargoLineYearLabel()
+        fuelLabel.text = R.string.texts.cargoLineFuelLabel()
+        brandLabel.text = R.string.texts.cargoLineBrandLabel()
+    }
+    
+    private func addPickerTo(textField: UITextField) {
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        pickerView.dataSource = self
+        textField.inputView = pickerView
+    }
+    
+    private func configureTextFields() {
+        addPickerTo(textField: typeField)
+        addPickerTo(textField: yearField)
+        addPickerTo(textField: fuelField)
+        addPickerTo(textField: brandField)
+    }
+    
+    private func configureButtons() {
+        calculateButton.titleLabel?.text = R.string.texts.cargoLineCalculateButton()
+        cleanButton.titleLabel?.text = R.string.texts.cargoLineCleanButton()
+    }
+    
+    private func clear() {
+        typeField.text = carTypes[0].name
+        yearField.text = String(years[0])
+        fuelField.text = fuel[0].name
+        brandField.text = brands[0].name
+    }
+    
+    private func showAlertWith(title: String) {
+        let alert = UIAlertController(title: R.string.texts.cargoLineAlertTitle(), message: title, preferredStyle: .alert)
+        alert.addAction(.init(title: R.string.texts.cargoLineAlertSubtitle(), style: .cancel))
+        self.present(alert, animated: true)
+    }
 }
 
 extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }

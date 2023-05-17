@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B9DA448421DF0874468A920 /* Pods_CargoLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB0C9525E42DE6E319FB592 /* Pods_CargoLine.framework */; };
+		AB52BD192A1420CA00A9B9BA /* Texts.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB52BD1B2A1420CA00A9B9BA /* Texts.strings */; };
+		AB52BD2E2A153AE900A9B9BA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB52BD2D2A153AE800A9B9BA /* R.generated.swift */; };
 		ABBEDC682A0D743200CF5C29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC672A0D743200CF5C29 /* AppDelegate.swift */; };
 		ABBEDC6A2A0D743200CF5C29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC692A0D743200CF5C29 /* SceneDelegate.swift */; };
 		ABBEDC6C2A0D743200CF5C29 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBEDC6B2A0D743200CF5C29 /* HomeViewController.swift */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DB0C9525E42DE6E319FB592 /* Pods_CargoLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CargoLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB52BD152A141A4C00A9B9BA /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Main.strings; sourceTree = "<group>"; };
+		AB52BD162A141A4D00A9B9BA /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AB52BD1A2A1420CA00A9B9BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Texts.strings; sourceTree = "<group>"; };
+		AB52BD1C2A1420D700A9B9BA /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Texts.strings; sourceTree = "<group>"; };
+		AB52BD2D2A153AE800A9B9BA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		ABBEDC642A0D743200CF5C29 /* CargoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CargoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABBEDC672A0D743200CF5C29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABBEDC692A0D743200CF5C29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +41,8 @@
 		ABBEDC812A0D895F00CF5C29 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 		ABBEDC832A0D8A6700CF5C29 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		ABBEDC852A0D8B6400CF5C29 /* CarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarType.swift; sourceTree = "<group>"; };
+		C0E542958BE0AEA341A00FCA /* Pods-CargoLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CargoLine.release.xcconfig"; path = "Target Support Files/Pods-CargoLine/Pods-CargoLine.release.xcconfig"; sourceTree = "<group>"; };
+		E03C99112764F24C85E01853 /* Pods-CargoLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CargoLine.debug.xcconfig"; path = "Target Support Files/Pods-CargoLine/Pods-CargoLine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +50,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B9DA448421DF0874468A920 /* Pods_CargoLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3512EAD1B4AE35E309B0DA0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DB0C9525E42DE6E319FB592 /* Pods_CargoLine.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36F206F55DE2DF272C2F5EA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E03C99112764F24C85E01853 /* Pods-CargoLine.debug.xcconfig */,
+				C0E542958BE0AEA341A00FCA /* Pods-CargoLine.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ABBEDC5B2A0D743200CF5C29 = {
 			isa = PBXGroup;
 			children = (
 				ABBEDC662A0D743200CF5C29 /* CargoLine */,
 				ABBEDC652A0D743200CF5C29 /* Products */,
+				36F206F55DE2DF272C2F5EA0 /* Pods */,
+				3512EAD1B4AE35E309B0DA0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,15 +97,17 @@
 			children = (
 				ABBEDC672A0D743200CF5C29 /* AppDelegate.swift */,
 				ABBEDC692A0D743200CF5C29 /* SceneDelegate.swift */,
+				AB52BD2D2A153AE800A9B9BA /* R.generated.swift */,
 				ABBEDC6B2A0D743200CF5C29 /* HomeViewController.swift */,
+				ABBEDC832A0D8A6700CF5C29 /* Country.swift */,
 				ABBEDC852A0D8B6400CF5C29 /* CarType.swift */,
 				ABBEDC7F2A0D88D400CF5C29 /* Fuel.swift */,
 				ABBEDC812A0D895F00CF5C29 /* Brand.swift */,
-				ABBEDC832A0D8A6700CF5C29 /* Country.swift */,
 				ABBEDC6D2A0D743200CF5C29 /* Main.storyboard */,
 				ABBEDC702A0D743600CF5C29 /* Assets.xcassets */,
 				ABBEDC722A0D743600CF5C29 /* LaunchScreen.storyboard */,
 				ABBEDC752A0D743600CF5C29 /* Info.plist */,
+				AB52BD1B2A1420CA00A9B9BA /* Texts.strings */,
 			);
 			path = CargoLine;
 			sourceTree = "<group>";
@@ -86,9 +119,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABBEDC782A0D743600CF5C29 /* Build configuration list for PBXNativeTarget "CargoLine" */;
 			buildPhases = (
+				5A3FBD5741750AFC2828595E /* [CP] Check Pods Manifest.lock */,
+				AB52BD252A14F21B00A9B9BA /* SwiftLint */,
+				AB52BD262A15246A00A9B9BA /* R.Swift */,
 				ABBEDC602A0D743200CF5C29 /* Sources */,
 				ABBEDC612A0D743200CF5C29 /* Frameworks */,
 				ABBEDC622A0D743200CF5C29 /* Resources */,
+				44A826284ED93925B06B1861 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -121,6 +158,7 @@
 			knownRegions = (
 				en,
 				Base,
+				uk,
 			);
 			mainGroup = ABBEDC5B2A0D743200CF5C29;
 			productRefGroup = ABBEDC652A0D743200CF5C29 /* Products */;
@@ -138,12 +176,92 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABBEDC742A0D743600CF5C29 /* LaunchScreen.storyboard in Resources */,
+				AB52BD192A1420CA00A9B9BA /* Texts.strings in Resources */,
 				ABBEDC712A0D743600CF5C29 /* Assets.xcassets in Resources */,
 				ABBEDC6F2A0D743200CF5C29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44A826284ED93925B06B1861 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CargoLine/Pods-CargoLine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CargoLine/Pods-CargoLine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CargoLine/Pods-CargoLine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A3FBD5741750AFC2828595E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CargoLine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB52BD252A14F21B00A9B9BA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		AB52BD262A15246A00A9B9BA /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABBEDC602A0D743200CF5C29 /* Sources */ = {
@@ -153,6 +271,7 @@
 				ABBEDC862A0D8B6400CF5C29 /* CarType.swift in Sources */,
 				ABBEDC6C2A0D743200CF5C29 /* HomeViewController.swift in Sources */,
 				ABBEDC802A0D88D400CF5C29 /* Fuel.swift in Sources */,
+				AB52BD2E2A153AE900A9B9BA /* R.generated.swift in Sources */,
 				ABBEDC682A0D743200CF5C29 /* AppDelegate.swift in Sources */,
 				ABBEDC842A0D8A6700CF5C29 /* Country.swift in Sources */,
 				ABBEDC822A0D895F00CF5C29 /* Brand.swift in Sources */,
@@ -163,10 +282,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AB52BD1B2A1420CA00A9B9BA /* Texts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB52BD1A2A1420CA00A9B9BA /* en */,
+				AB52BD1C2A1420D700A9B9BA /* uk */,
+			);
+			name = Texts.strings;
+			sourceTree = "<group>";
+		};
 		ABBEDC6D2A0D743200CF5C29 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				ABBEDC6E2A0D743200CF5C29 /* Base */,
+				AB52BD152A141A4C00A9B9BA /* uk */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -175,6 +304,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				ABBEDC732A0D743600CF5C29 /* Base */,
+				AB52BD162A141A4D00A9B9BA /* uk */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -186,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -246,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -298,6 +430,7 @@
 		};
 		ABBEDC792A0D743600CF5C29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E03C99112764F24C85E01853 /* Pods-CargoLine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +458,7 @@
 		};
 		ABBEDC7A2A0D743600CF5C29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0E542958BE0AEA341A00FCA /* Pods-CargoLine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

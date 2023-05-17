@@ -17,15 +17,15 @@ enum Brand: CaseIterable {
     var name: String {
         switch self {
         case .audi:
-            return "Audi"
+            return R.string.texts.cargoLineBrandAudi()
         case .bmw:
-            return "BMW"
+            return R.string.texts.cargoLineBrandBmw()
         case .mazda:
-            return "Mazda"
+            return R.string.texts.cargoLineBrandMazda()
         case .mersedesBenz:
-            return "MersedesBenz"
+            return R.string.texts.cargoLineBrandMersedesBenz()
         case .volkswagen:
-            return "Volkswagen"
+            return R.string.texts.cargoLineBrandVolkswagen()
         }
     }
     

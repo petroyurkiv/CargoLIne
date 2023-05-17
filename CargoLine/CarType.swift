@@ -16,13 +16,13 @@ enum CarType: CaseIterable {
     var name: String {
         switch self {
         case .sedan:
-            return "Sedan"
+            return R.string.texts.cargoLineCarTypeSedan()
         case .coupe:
-            return "Coupe"
+            return R.string.texts.cargoLineCarTypeCoupe()
         case .wagon:
-            return "Wagon"
+            return R.string.texts.cargoLineCarTypeWagon()
         case .minivan:
-            return "Minivan"
+            return R.string.texts.cargoLineCarTypeMinivan()
         }
     }
     

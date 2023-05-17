@@ -14,9 +14,9 @@ enum Country: Int {
     var name: String {
         switch self {
         case .ukraine:
-            return "Ukraine"
+            return R.string.texts.cargoLineCountryUkraine()
         case .usa:
-            return "USA"
+            return R.string.texts.cargoLineCountryUsa()
         }
     }
     

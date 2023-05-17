@@ -1,0 +1,29 @@
+"CargoLine.country.ukraine" = "Ukraine";
+"CargoLine.country.usa" = "USA";
+
+"CargoLine.typeLabel" = "Type";
+"CargoLine.yearLabel" = "Year";
+"CargoLine.fuelLabel" = "Fuel";
+"CargoLine.brandLabel" = "Brand";
+
+"CargoLine.carType.sedan" = "Sedan";
+"CargoLine.carType.coupe" = "Coupe";
+"CargoLine.carType.wagon" = "Wagon";
+"CargoLine.carType.minivan" = "Minivan";
+
+"CargoLine.fuel.petrol" = "Petrol";
+"CargoLine.fuel.diesel" = "Diesel";
+"CargoLine.fuel.gas" = "Gas";
+"CargoLine.fuel.electro" = "Electro";
+
+"CargoLine.brand.audi" = "Audi";
+"CargoLine.brand.bmw" = "BMW";
+"CargoLine.brand.mazda" = "Mazda";
+"CargoLine.brand.mersedesBenz" = "MersedesBenz";
+"CargoLine.brand.volkswagen" = "Volkswagen";
+
+"CargoLine.calculateButton" = "Calculate";
+"CargoLine.cleanButton" = "Clean";
+
+"CargoLine.alert.title" = "Your result:";
+"CargoLine.alert.subtitle" = "Ok";

@@ -1,0 +1,29 @@
+"CargoLine.country.ukraine" = "Україна";
+"CargoLine.country.usa" = "США";
+
+"CargoLine.typeLabel" = "Тип";
+"CargoLine.yearLabel" = "Рік";
+"CargoLine.fuelLabel" = "Пальне";
+"CargoLine.brandLabel" = "Бренд";
+
+"CargoLine.carType.sedan" = "Седан";
+"CargoLine.carType.coupe" = "Купе";
+"CargoLine.carType.wagon" = "Універсал";
+"CargoLine.carType.minivan" = "Мінівен";
+
+"CargoLine.fuel.petrol" = "Бензин";
+"CargoLine.fuel.diesel" = "Дизель";
+"CargoLine.fuel.gas" = "Газ";
+"CargoLine.fuel.electro" = "Електро";
+
+"CargoLine.brand.audi" = "Ауді";
+"CargoLine.brand.bmw" = "БМВ";
+"CargoLine.brand.mazda" = "Мазда";
+"CargoLine.brand.mersedesBenz" = "Мерседес";
+"CargoLine.brand.volkswagen" = "Фольксваген";
+
+"CargoLine.calculateButton" = "Порахувати";
+"CargoLine.cleanButton" = "Стерти";
+
+"CargoLine.alert.title" = "Показати результати:";
+"CargoLine.alert.subtitle" = "Окей";

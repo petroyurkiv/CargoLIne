@@ -237,11 +237,17 @@
                     </view>
                     <size key="freeformSize" width="390" height="844"/>
                     <connections>
-                        <outlet property="brandField" destination="K7K-yy-tor" id="Aie-u4-UQL"/>
-                        <outlet property="fuelField" destination="UKn-ei-wFy" id="c5X-5o-18V"/>
+                        <outlet property="brandField" destination="K7K-yy-tor" id="jbL-Z3-I3A"/>
+                        <outlet property="brandLabel" destination="RRT-AV-wEk" id="h07-PS-arO"/>
+                        <outlet property="calculateButton" destination="mCo-NZ-7zA" id="Jh2-kz-NH6"/>
+                        <outlet property="cleanButton" destination="knI-Dk-GYI" id="OWr-P5-5rA"/>
+                        <outlet property="fuelField" destination="UKn-ei-wFy" id="bDu-Sm-au5"/>
+                        <outlet property="fuelLabel" destination="ARG-ul-YiL" id="7Dn-fQ-2WH"/>
                         <outlet property="segmentedControl" destination="1QI-Mr-Att" id="4QS-sH-MbH"/>
                         <outlet property="typeField" destination="tcR-6Y-tHR" id="ga5-sw-DkR"/>
+                        <outlet property="typeLabel" destination="PJs-0R-Okz" id="9XA-xy-xhh"/>
                         <outlet property="yearField" destination="Equ-WC-TgX" id="0Fm-ON-X0X"/>
+                        <outlet property="yearLabel" destination="mAa-XR-FjG" id="M37-yh-YLQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

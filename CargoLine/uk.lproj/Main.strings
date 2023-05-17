@@ -1,0 +1,30 @@
+
+/* Class = "UISegmentedControl"; 1QI-Mr-Att.segmentTitles[0] = "First"; ObjectID = "1QI-Mr-Att"; */
+"1QI-Mr-Att.segmentTitles[0]" = "First";
+
+/* Class = "UISegmentedControl"; 1QI-Mr-Att.segmentTitles[1] = "Second"; ObjectID = "1QI-Mr-Att"; */
+"1QI-Mr-Att.segmentTitles[1]" = "Second";
+
+/* Class = "UILabel"; text = "Fuel"; ObjectID = "ARG-ul-YiL"; */
+"ARG-ul-YiL.text" = "Fuel";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "PJs-0R-Okz"; */
+"PJs-0R-Okz.text" = "Type";
+
+/* Class = "UILabel"; text = "Brand"; ObjectID = "RRT-AV-wEk"; */
+"RRT-AV-wEk.text" = "Brand";
+
+/* Class = "UIButton"; configuration.title = "Clean"; ObjectID = "knI-Dk-GYI"; */
+"knI-Dk-GYI.configuration.title" = "Clean";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "knI-Dk-GYI"; */
+"knI-Dk-GYI.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Year"; ObjectID = "mAa-XR-FjG"; */
+"mAa-XR-FjG.text" = "Year";
+
+/* Class = "UIButton"; configuration.title = "Calculate"; ObjectID = "mCo-NZ-7zA"; */
+"mCo-NZ-7zA.configuration.title" = "Calculate";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mCo-NZ-7zA"; */
+"mCo-NZ-7zA.normalTitle" = "Button";

@@ -16,13 +16,13 @@ enum Fuel: CaseIterable {
     var name: String {
         switch self {
         case .petrol:
-            return "Petrol"
+            return R.string.texts.cargoLineFuelPetrol()
         case .diesel:
-            return "Diesel"
+            return R.string.texts.cargoLineFuelDiesel()
         case .gas:
-            return "Gas"
+            return R.string.texts.cargoLineFuelGas()
         case .electro:
-            return "Electro"
+            return R.string.texts.cargoLineFuelElectro()
         }
     }
     
